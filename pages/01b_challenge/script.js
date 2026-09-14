@@ -1,16 +1,10 @@
-import gsap from 'gsap';
-gsap.to('.card', {
-    opacity: 1,
-    scale: 1,
-    duration: 5,
-    onComplete: () => {
-        gsap.to('.card', {
-            scale:1.1,
-            repeat: -1,
-            yoyo: true,
-            duration: 0.5,
-        });
-    }
-});
+import gsap from "gsap";
 
-
+    // Pulsing glow animation
+    gsap.to(".card", {
+      boxShadow: "0 20px 80px rgba(124, 249, 216, 0.6)",
+      repeat: -1,
+      yoyo: true,
+      duration: 1,
+    });
+  
